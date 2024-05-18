@@ -1,13 +1,11 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     background-color: white;
 }
 
-
 .container {
-    width: auto;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -15,67 +13,52 @@
     flex-direction: column;
 }
 
-
-
-.title-signup{
-    padding: 4rem;
+.title-signup {
+    padding: 2rem 0;
 }
 
-.aj-title{
+.aj-title {
     font-weight: bold !important;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; 
+    flex-direction: column;
+    text-align: center;
 }
 
-
-.title-input{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+.title-input {
+    margin: 1rem 0;
 }
 
-.button-signup button{
+.button-signup button, .button-google button {
     border-radius: .5rem;
-    width: 100% !important;
-    background-color: black;
-    color: white;
     padding: .5rem;
 }
 
-.button-google button{
-    border-radius: .5rem;
+.button-signup button {
+    background-color: black;
+    color: white;
 }
 
-.title-input, .button-signup, .button-google{
-    width: 70vh;
+.button-google button {
+    background-color: whitesmoke;
+    color: black;
 }
-
 
 .line {
     width: 100%;
     font-weight: bold;
     display: flex;
     align-items: center;
-    justify-content: center; 
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    justify-content: center;
+    margin: 1rem 0;
 }
 
 .line::before,
 .line::after {
-    content: ""; 
-    display: inline-block; 
+    content: "";
+    display: inline-block;
     width: 30%;
-    border-top: 1px solid black; 
-    margin: 0 5px; 
-}
-
-
-.button-google button{
-    width: 100% !important;
-    background-color: whitesmoke !important;
-    color: black;
-    padding: .5rem;
-    margin-bottom: 1rem;
+    border-top: 1px solid black;
+    margin: 0 5px;
 }

@@ -78,17 +78,13 @@ WSGI_APPLICATION = 'Recommandation.wsgi.application'
 #     'default': {
 #         'ENGINE': 'djongo',
 #         'NAME': 'recommandation_system',
-#         'ENFORCE_SCHEMA': False,
 #         'CLIENT': {
-#             'host': 'mongodb://localhost:27017',  # Default is 'localhost'
-#             'port': 27017,  # Default port for MongoDB
-#             'username': 'rthjr',  # If authentication is enabled
-#             'password': '123rthjr123',  # If authentication is enabled
-#             'authSource': 'admin',  # Default authentication database
-#             'authMechanism': 'SCRAM-SHA-1',  # Authentication mechanism
+#             'host': 'mongodb://localhost:27017',  # MongoDB server address
+#             'port': 27017,        # MongoDB default port
 #         }
 #     }
 # }
+
 
 
 # Password validation
