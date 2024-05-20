@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'ry',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -74,17 +75,18 @@ WSGI_APPLICATION = 'Recommandation.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'djongo',
-#         'NAME': 'recommandation_system',
-#         'CLIENT': {
-#             'host': 'mongodb://localhost:27017',  # MongoDB server address
-#             'port': 27017,        # MongoDB default port
-#         }
-#     }
-# }
 
+# posgresql database config
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'rs',
+        'USER': 'recommandation',
+        'PASSWORD': 'recommandation123',
+        'HOST': 'localhost',  
+        'PORT': '5432', 
+    } 
+}
 
 
 # Password validation

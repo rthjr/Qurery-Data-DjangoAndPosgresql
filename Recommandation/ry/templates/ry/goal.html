@@ -2,82 +2,16 @@
 
 
 
+<!-- your_app/templates/goal_list.html -->
+
 {% block content %}
-<div class="user_info">
-
-    <h1>My GOAL</h1>
-
-</div>
-<div class="container container-base p-5">
-    <div class="row user_goal">
-        <div class="enter_goal">
-            <h4>
-                Enter :
-            </h4>
-        </div>
-
-        <div class="col-md-12">
-            <input type="text" class="form-control" placeholder="Search For A Goal" aria-label="First name">
-        </div>
-
-        <div class="result">
-            <h4>
-                Result :
-            </h4>
-        </div>
-
-        <!-- Search Results -->
-        <div class="list-group">
-            {% for result in results %}
-            <a href="{{ result.url }}" class="list-group-item list-group-item-action">
-                <h5 class="mb-1">{{ result.title }}</h5>
-                <p class="mb-1">{{ result.description }}</p>
-            </a>
-            {% empty %}
-            <p>No results found.</p>
-            {% endfor %}
-        </div>
-    </div>
-</div>
-
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        background-color: white;
-    }
-
-    .user_goal {
-        display: flex;
-        gap: 4rem;
-        padding: 1rem;
-        width: 100%;
-        height: 100%;
-    }
-
-    .user_info {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: lightgray;
-        padding: 1rem;
-    }
-
-    .list-group {
-        padding: 1rem;
-    }
-
-    .container-base{
-        background-color: black !important;
-        color: white;
-        margin-top: 1rem;
-        border-radius: 1rem;
-        height: auto !important;
-    }
-</style>
+<h1>Goals</h1>
+<ul>
+    {% for goal in goals %}
+    <li>
+        <a href="{{ goal.url }}">{{ goal.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
 
 {% endblock %}
