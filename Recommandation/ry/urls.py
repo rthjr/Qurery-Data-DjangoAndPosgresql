@@ -3,15 +3,6 @@
 
 from django.urls import path
 from . import views
-
-# rest framwork
-# urlpatterns = [
-#     path('goal/', goal_view.as_view()),
-#     path('goal/<int:id>', goal_view.as_view()),
-#     path('', views.signup_page),
-# ]
-
-
 from .views import goal_list
 
 urlpatterns = [
