@@ -80,9 +80,15 @@ WSGI_APPLICATION = 'Recommandation.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
+
+        # database name
         'NAME': 'rs',
+
+         # pw and user from login/group role
         'USER': 'recommandation',
         'PASSWORD': 'recommandation123',
+
+        # default
         'HOST': 'localhost',  
         'PORT': '5432', 
     } 
